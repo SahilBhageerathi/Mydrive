@@ -1,0 +1,360 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    padding: 0px;
+    margin: 0px;
+}
+
+#header{
+    border:1px solid black;
+    margin:10px;
+    padding:10px;
+    display: flex;
+    justify-content: center;
+}
+#header button{
+    padding:20px;
+    margin:10px;
+    border-radius: 10px;
+    font-weight: 600;
+    cursor: pointer;
+    
+}
+#header button:hover{
+    background-color: aqua;
+    transform:scale(1.05);
+}
+
+
+/* CSS */
+.button-33 {
+  background-color: #c2fbd7;
+  border-radius: 100px;
+  box-shadow: rgba(44, 187, 99, .2) 0 -25px 18px -14px inset,rgba(44, 187, 99, .15) 0 1px 2px,rgba(44, 187, 99, .15) 0 2px 4px,rgba(44, 187, 99, .15) 0 4px 8px,rgba(44, 187, 99, .15) 0 8px 16px,rgba(44, 187, 99, .15) 0 16px 32px;
+  color: green;
+  cursor: pointer;
+  display: inline-block;
+  font-family: CerebriSans-Regular,-apple-system,system-ui,Roboto,sans-serif;
+  padding: 7px 20px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 250ms;
+  border: 0;
+  font-size: 16px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-33:hover {
+  box-shadow: rgba(44,187,99,.35) 0 -25px 18px -14px inset,rgba(44,187,99,.25) 0 1px 2px,rgba(44,187,99,.25) 0 2px 4px,rgba(44,187,99,.25) 0 4px 8px,rgba(44,187,99,.25) 0 8px 16px,rgba(44,187,99,.25) 0 16px 32px;
+  transform: scale(1.05) rotate(-1deg);
+}
+
+/* BUTTON DESIGN ENDS HERE */
+#breadcrumb{
+    border:1px solid black;
+    margin:10px;
+    display:flex;
+   
+}
+#breadcrumb a{
+    background-color:rgb(218, 18, 28);
+    color:white;
+    padding:10px;
+    border-right:5px solid black;
+}
+#breadcrumb a:hover{
+    background-color:yellow;
+    color:black;
+    cursor:pointer;
+    text-decoration:underline;
+}
+
+#container{
+    border:1px solid black;
+    margin:10px;
+    padding:10px;
+    display: flex;
+}
+
+.folder{
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    border:1px solid blue;
+    color: white;
+    height:130px;
+    width:150px;
+    margin:10px;
+    background-color:green;
+    padding: 10px;
+    border-radius: 5px;
+}
+.folder div[purpose=name]{
+    margin-top: 80px;
+    cursor:pointer;
+
+}
+.folder [action]:hover{
+    cursor: pointer;
+    color: blue;
+
+}
+
+.text-file{
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    border:1px solid blue;
+    color: white;
+    height:130px;
+    width:150px;
+    margin:10px;
+    background-color:#C561E4;
+    padding: 10px;
+    border-radius: 5px;
+}
+.text-file div[purpose=name]{
+    margin-top: 80px;
+    cursor:pointer;
+
+}
+.text-file [action]:hover{
+    cursor: pointer;
+    color: blue;
+
+}
+
+.album{
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    border:1px solid blue;
+    color: white;
+    height:130px;
+    width:150px;
+    margin:10px;
+    background-color:red;
+    padding: 10px;
+    border-radius: 5px;
+}
+.album div[purpose=name]{
+    margin-top: 80px;
+    cursor:pointer;
+
+}
+.album [action]:hover{
+    cursor: pointer;
+    color: blue;
+
+}
+
+#app{
+    border:5px solid black;
+    margin:10px; 
+}
+
+
+
+#app-title-bar{
+     /* background-color:lightslategrey; */
+     display:flex;
+    /* color:white; */
+     height:40px;
+
+}
+#app-title{
+    width:94%;
+    text-align:center;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:20px;
+    /* background-color:red; */
+}
+#win-actions{
+    width:6%;
+    display:flex;
+    padding:3px;
+    align-items:center;
+    justify-content:space-between;
+    font-size:16px;
+
+}
+
+#app-menu-bar{
+    display:flex;
+    background-color:lightslategrey;
+    height:40px;
+
+}
+
+.notepad-menu{
+    width:100%;
+    padding:5px;
+    display:flex;
+    align-items:center;
+}
+.notepad-menu *{
+    margin:0px 5px;
+    cursor:pointer;
+}
+
+.notepad-menu input[type=color]{
+    width:70px;
+    border-radius: 5px;
+}
+.notepad-menu span:hover{
+    transform:scale(1.2);
+    background-color: white;
+    border-radius: 5px;
+}
+.notepad-menu select{
+    border-radius: 5px;
+    height:85%;
+}
+.notepad-menu [pressed=true]{
+    transform:scale(1.2);
+    background-color: white;
+    border-radius: 5px;
+}
+.notepad-menu input[action=upload]{
+    border:2px solid cornsilk;
+    border-radius: 5px;
+    display:none
+}
+
+#app-body{
+    background-color:rgba(35, 184, 15, 0.527);
+    height:500px;
+
+}
+
+.notepad-body{
+    height:100%;
+    width:100%;
+}
+
+.notepad-body textarea{
+    height:100%;
+    width:100%;
+}
+
+a[purpose=download]{
+    display:none;
+}
+#win-actions span{
+    cursor:pointer;
+}
+
+#win-actions span:hover{
+    transform:scale(1.5);
+    color:red;
+
+}
+
+
+
+.album-menu{
+    width:100%;
+    padding:5px;
+    display:flex;
+    align-items:center;
+}
+.album-menu *{
+    margin:0px 5px;
+    cursor:pointer;
+}
+
+.album-menu input[type=color]{
+    width:70px;
+    border-radius: 5px;
+}
+.album-menu span:hover{
+    transform:scale(1.2);
+    background-color: white;
+    border-radius: 5px;
+}
+.album-menu select{
+    border-radius: 5px;
+    height:85%;
+}
+.album-menu [pressed=true]{
+    transform:scale(1.2);
+    background-color: white;
+    border-radius: 5px;
+}
+.album-menu input[action=upload]{
+    border:2px solid cornsilk;
+    border-radius: 5px;
+    display:none
+}
+.album-body{
+    height:100%;
+    width:100%;
+    padding:5px;
+}
+.picture-list{
+    border:1px solid black;
+    height:100px;
+    margin:5px;
+    padding:5px;
+    display:flex;
+}
+.picture-list img{
+    height:90%;
+    margin:5px;
+    border:3px solid greenyellow;
+    border-radius: 3px;
+    cursor:pointer;
+}
+
+.picture-list img:hover{
+    transform:scale(1.05); 
+}
+.picture-list img[pressed=true]{
+    transform:scale(1.1);
+    border:3px solid white; 
+}
+.picture-view{
+    border:1px solid black;
+    width:100%;
+    height:350px;
+    margin:5px;
+    display:flex;
+    padding:5px;
+} 
+
+/* .picture-view .picture-main img{
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+} */
+.picture-view > div{
+    height:100%;
+    border:1px solid white;
+} 
+
+.picture-view .picture-main{
+    padding:5px;
+    width:70%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+} 
+.picture-main img{
+    height:99%;
+    padding:5px;
+
+}
+
+.picture-view .move-left{
+    width:15%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+} 
+
+.picture-view .move-right{
+    width:15%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+
+

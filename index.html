@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+  <link rel="stylesheet" href="./style.css">
+
+  <title>DRIVE PROJECT</title>
+</head>
+
+<body>
+  <div id="header">
+    <!-- If button design is removed then also remove button-33 class and role attributes -->
+    <button id="addFolder" class="button-33" role="button">Add Folder</button> 
+    <button id="addTextFile" class="button-33" role="button">Add Text File</button>
+    <button id="addAlbum" class="button-33" role="button">Add Album</button>
+  </div>
+
+  <div id="breadcrumb">
+    <a purpose="path" rid="-1">Root</a>
+  </div>
+
+  <div id="container">
+
+  </div>
+
+  <div id="app">
+    <div id="app-title-bar">
+      <div id="app-title">title will come here</div>
+      <div id="win-actions">
+        <span id="minimize"><i class="far fa-window-minimize"></i></span>
+        <span id="maximize"><i class="far fa-square"></i></span>
+        <span id="app-close"><i class="fas fa-times"></i></span>
+      </div>
+    </div>
+    <div id="app-menu-bar"></div>
+    <div id="app-body"></div>
+  </div>
+
+  <template id="templates">
+    <div class="folder" rid="" pid="">
+      <span action="rename">rename</span>
+      <span action="delete">delete</span>
+      <span action="view">view</span>
+      <div purpose="name">name</div>
+    </div>
+
+    <div class="text-file" rid="" pid="">
+      <span action="rename">rename</span>
+      <span action="delete">delete</span>
+      <span action="view">view</span>
+      <div purpose="name">name</div>
+    </div>
+
+    <div class="album" rid="" pid="">
+      <span action="rename">rename</span>
+      <span action="delete">delete</span>
+      <span action="view">view</span>
+      <div purpose="name">name</div>
+    </div>
+
+    <a purpose="path" rid="-1">Root</a>
+
+    <div purpose="notepad-menu" class="notepad-menu">
+      <span action="save" class="material-icons">save</span>
+      <span pressed="false" action="bold" class="material-icons">format_bold</span>
+      <span pressed="false" action="italic" class="material-icons">format_italic</span>
+      <span pressed="false" action="underline" class="material-icons">format_underline</span>
+      <input type="color" action="bg-color" />
+      <input type="color" action="fg-color" />
+      <select action="font-family">
+        <option value="monospace">monospace</option>
+        <option value="serif">serif</option>
+        <option value="sans-serif">sans-serif</option>
+        <option value="cursive">cursive</option>
+      </select>
+
+      <select action="font-size">
+        <option value="8">8</option>
+        <option value="10">10</option>
+        <option value="12">12</option>
+        <option value="14">14</option>
+        <option value="16">16</option>
+        <option value="18">18</option>
+        <option value="20">20</option>
+        <option value="22">22</option>
+        <option value="24">24</option>
+        <option value="26">26</option>
+        <option value="28">28</option>
+        <option value="30">30</option>
+        <option value="32">32</option>
+      </select>
+      <span action="download" class="material-icons">download</span>
+      <span action="forupload" class="material-icons">upload</span>
+      <input action="upload" type="file">
+      <a purpose="download" href="http://www.google.com">link</a>
+    </div>
+
+    <div purpose="notepad-body" class="notepad-body">
+      <textarea>I am the Notepad's body</textarea>
+    </div>
+
+
+    <div purpose="album-menu" class="album-menu">
+      <span action="save" class="material-icons">save</span>
+      <span action="download" class="material-icons">download</span>
+      <span action="upload" class="material-icons">upload</span>
+
+      <span action="add" class="material-icons">add</span>
+      <span action="delete" class="material-icons">delete</span>
+      <span action="left" class="material-icons">keyboard_double_arrow_left</span>
+      <span action="right" class="material-icons">keyboard_double_arrow_right</span>
+
+      <span action="play" class="material-icons">play_arrow</span>
+      <span action="pause" class="material-icons">pause</span>
+    </div>
+
+    <div purpose="album-body" class="album-body">
+      <div class="picture-list">
+      </div>
+      <div class="picture-view">
+        <div class="move-left">
+          <span action="left" class="material-icons">keyboard_double_arrow_left</span>
+
+        </div>
+        <div class="picture-main">
+          <img
+            src="" alt="please select an image" />
+        </div>
+        <div class="move-right">
+          <span action="right" class="material-icons">keyboard_double_arrow_right</span>
+        </div>
+      </div>
+    </div>
+  </template>
+  <script src="./script.js"></script>
+</body>
+
+</html>
